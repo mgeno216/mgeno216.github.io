@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "compass/compass/css3/flexbox";
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.3;
+  background-color: $bg;
+  color: $dark-gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.8em; }
+h6 { font-size: 0.75em; }
+
+@media (max-width: $phone-break) {
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 1.25em; }
+  h3 { font-size: 1em; }
+  h4 { font-size: 0.8em; }
+  h5 { font-size: 0.7em; }
+  h6 { font-size: 0.7em; }
+}
+
+.site-wrapper {
+  max-width: $page-content-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-content {
+  margin: 0 15px;
+}
+
+.row.is-flex {
+  @include display-flex(flex);
+  @include flex-wrap(wrap);
+}
+.row.is-flex > [class*='col-'] {
+  @include display-flex(flex);
+  @include flex-direction(column);
+}
+

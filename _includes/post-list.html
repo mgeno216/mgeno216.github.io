@@ -1,0 +1,25 @@
+<div class="row is-flex">
+  {% for post in site.posts %}
+    <div class="col-sm-6 tile-wrapper">
+      {% if post.link %}
+      <a href="{{ post.link }}" target="_blank">
+      {% endif %}
+        <div class="post-tile">
+          <div class="image">
+            <img src="{{ post.image }}">
+          </div>
+          <div class="desc">
+            <p class="type">{{post.type | upcase}}</p>
+            <p class="summary">{{post.summary}}</p>
+            <p class="date">
+              {{post.start | upcase}}{% if post.end %}<br>
+              -{{post.end | upcase}}{% endif %}
+            </p>
+          </div>
+        </div>
+      {% if post.link %}
+      </a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

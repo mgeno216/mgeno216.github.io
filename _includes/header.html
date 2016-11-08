@@ -1,0 +1,19 @@
+<div class="header-wrapper">
+  <div class="site-header">
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.tag }}</h2>
+    <h4>
+      {% if site.github %}
+        <a class="social-link" href="{{site.github}}">GITHUB</a>
+      {% endif %}
+       | 
+      {% if site.linkedin %}
+        <a class="social-link" href="{{site.linkedin}}">LINKEDIN</a>
+      {% endif %}
+       |
+      {% if site.email %}
+        <a class="social-link" href="mailto:{{site.email}}">EMAIL</a>
+      {% endif %}
+    </h4>
+  </div>
+</div>
