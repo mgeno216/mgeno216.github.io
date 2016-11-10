@@ -4,13 +4,17 @@
     <h2>{{ site.tag }}</h2>
     <h4>
       {% if site.github %}
-        <a class="social-link" href="{{site.github}}">GITHUB</a>
-      {% endif %}
+        <a class="social-link" href="{{site.github}}" target="_blank">GITHUB</a>
        | 
-      {% if site.linkedin %}
-        <a class="social-link" href="{{site.linkedin}}">LINKEDIN</a>
       {% endif %}
+      {% if site.linkedin %}
+        <a class="social-link" href="{{site.linkedin}}" target="_blank">LINKEDIN</a>
        |
+      {% endif %}
+      {% if site.hackerrank %}
+        <a class="social-link" href="{{site.hackerrank}}" target="_blank">HACKERRANK</a>
+       |
+      {% endif %}
       {% if site.email %}
         <a class="social-link" href="mailto:{{site.email}}">EMAIL</a>
       {% endif %}
