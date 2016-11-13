@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "compass/compass/css3/flexbox";
+@import "compass/compass/css3";
 
 html, body {
   height: auto;
@@ -15,9 +15,7 @@ img {
 }
 
 body {
-          box-sizing: border-box;
-     -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 h1 { font-size: 4em; }
@@ -44,14 +42,5 @@ h6 { font-size: 0.75em; }
 
 .site-content {
   margin: 0 15px;
-}
-
-.row.is-flex {
-  @include display-flex(flex);
-  @include flex-wrap(wrap);
-}
-.row.is-flex > [class*='col-'] {
-  @include display-flex(flex);
-  @include flex-direction(column);
 }
 
