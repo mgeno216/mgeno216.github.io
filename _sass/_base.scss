@@ -44,3 +44,12 @@ h6 { font-size: 0.75em; }
   margin: 0 15px;
 }
 
+.row.is-flex {
+  @include display-flex(flex);
+  @include flex-wrap(wrap);
+}
+.row.is-flex > [class*='col-'] {
+  @include display-flex(flex);
+  @include flex-direction(column);
+}
+
