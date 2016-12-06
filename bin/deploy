@@ -3,7 +3,7 @@
 if [[ `git status --porcelain` ]]; then
 	echo "Unstaged Changes - Aborting"
 else
-	cp ../_config-prod.yml ../_config.yml
+	cp _config-prod.yml _config.yml
 	jekyll build
 	git push origin master
 fi
