@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jekyll build --config _config-prod.yml
+
+git push origin master

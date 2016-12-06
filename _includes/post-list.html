@@ -2,9 +2,7 @@
   {% for post in site.posts %}
     <div class="col-sm-6 tile-wrapper">
       {% if post.link %}
-      <a href="{{ post.link }}"
-         target="_blank"
-         onclick="return trackOutboundLink('{{ post.link }}', true)">
+      <a href="{{ post.link }}" target="_blank">
       {% endif %}
         <div class="post-tile">
           <div class="image">

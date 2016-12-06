@@ -8,8 +8,9 @@ baseurl:     ""
 url:         ""
 date_format: "%b %-d, %Y"
 
-# Google services
+# Analytics
 google_analytics: UA-59369506-1
+heap_analytics: 2012225040
 
 # Social
 github: https://github.com/mgeno216

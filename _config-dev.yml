@@ -1,0 +1,28 @@
+# Site settings
+title:       Mike Genovese
+tag:         Computer Engineer
+email:       mgeno216@gmail.com
+author:      Mike Genovese
+description: ""
+baseurl:     ""
+url:         ""
+date_format: "%b %-d, %Y"
+
+# Analytics
+heap_analytics: 743280694
+
+# Social
+github: https://github.com/mgeno216
+linkedin: https://www.linkedin.com/in/mgeno216
+hackerrank: https://www.hackerrank.com/mgeno216
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+sass:
+  compressed: true
+gems:
+  - jekyll-sitemap
+exclude: [vendor]
