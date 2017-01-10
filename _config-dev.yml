@@ -8,9 +8,6 @@ baseurl:     ""
 url:         ""
 date_format: "%b %-d, %Y"
 
-# Analytics
-heap_analytics: 743280694
-
 # Social
 github: https://github.com/mgeno216
 linkedin: https://www.linkedin.com/in/mgeno216
