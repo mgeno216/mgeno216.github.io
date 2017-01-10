@@ -42,6 +42,28 @@ h6 {
   font-size: 0.75em;
 }
 
+.site-wrapper {
+  max-width: $page-content-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-content {
+  margin: 0 15px;
+}
+
+@media (min-width: $phone-break) {
+  .row.is-flex {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+  }
+
+  .row.is-flex > [class*='col-'] {
+    @include display-flex(flex);
+    @include flex-direction(column);
+  }
+}
+
 @media (max-width: $phone-break) {
   h1 {
     font-size: 2.5em;
@@ -61,24 +83,4 @@ h6 {
   h6 {
     font-size: 0.7em;
   }
-}
-
-.site-wrapper {
-  max-width: $page-content-width;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.site-content {
-  margin: 0 15px;
-}
-
-.row.is-flex {
-  @include display-flex(flex);
-  @include flex-wrap(wrap);
-}
-
-.row.is-flex > [class*='col-'] {
-  @include display-flex(flex);
-  @include flex-direction(column);
 }
